@@ -15,10 +15,9 @@
         android:textAlignment="center"
         android:textSize="60sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toTopOf="parent"
-        app:layout_constraintStart_toLeftOf="parent"
-        app:layout_constraintStart_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="50dp"
         />
 
@@ -67,7 +66,7 @@
         />
 
     <Button
-        android:id="@+id/registerUser"
+        android:id="@+id/signIn"
         android:layout_width="380dp"
         android:layout_height="70dp"
         android:textSize="24sp"
@@ -93,4 +92,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passwort vergessen?"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft
+            ="20dp"
+        app:layout_constraintLeft_toRightOf="@id/register"
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrieren"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintRight_toLeftOf="@+id/forgotPassword"
+        app:layout_constraintTop_toBottomOf="@+id/signIn" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
